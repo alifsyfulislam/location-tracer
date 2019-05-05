@@ -233,43 +233,48 @@ function checkPosition() {
 
 function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
+        navigator.permissions.query({name:'geolocation'}).then(function(result) {
+            if (result.state === 'granted') {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+        });
+
     }
 }
 
 function showPosition(position) {
     var low = (position.coords.latitude).toFixed(2);
     var high = (position.coords.longitude).toFixed(2);
-    if (low >= "23.70" || low<"23.80" && high >= "90.40" || high<"90.50"){
+    if (low >= "23.70" && low<"23.80" && high >= "90.40" && high<"90.50"){
         divisionStatus = division.innerText = "dhk";
 
     }
-    else if (low >= "22.30" || low<"22.40" && high >= "91.80" || high<"91.90") {
+    else if (low >= "22.30" && low<"22.40" && high >= "91.80" && high<"91.90") {
         divisionStatus = division.innerText = "ctg";
     }
 
-    else if (low >= "22.75" || low<"22.85" && high >= "89.50" || high<"89.60") {
+    else if (low >= "22.75" && low<"22.85" && high >= "89.50" && high<"89.60") {
         divisionStatus = division.innerText = "khu";
     }
 
-    else if (low >= "24.30" || low<"24.40" && high >= "88.55" || high<"88.65") {
+    else if (low >= "24.30" && low<"24.40" && high >= "88.55" && high<"88.65") {
         divisionStatus = division.innerText = "raj";
     }
 
-    else if (low >= "24.80" || low<"24.90" && high >= "91.80" || high<"91.90") {
+    else if (low >= "24.80" && low<"24.90" && high >= "91.80" && high<"91.90") {
         divisionStatus = division.innerText = "sly";
     }
 
-    else if (low >= "22.60" || low<"22.70" && high >= "90.30" || high<"90.40") {
+    else if (low >= "22.60" && low<"22.70" && high >= "90.30" && high<"90.40") {
         divisionStatus = idivision.innerText = "bar";
     }
 
-    else if (low >= "25.70" || low<"25.80" && high >= "89.20" || high<"89.30") {
+    else if (low >= "25.70" && low<"25.80" && high >= "89.20" && high<"89.30") {
         divisionStatus = division.innerText = "ran";
     }
 
 
-    else if (low >= "24.70" || low<"24.80" && high >= "90.30" || high<"90.40") {
+    else if (low >= "24.70" && low<"24.80" && high >= "90.30" && high<"90.40") {
         divisionStatus = division.innerText = "myn";
     }
 }
