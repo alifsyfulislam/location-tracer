@@ -89,7 +89,7 @@ var audioFile2 = document.getElementById('audioFile2');
 
 setInterval( function () {
     var today = new Date();
-    if (today.getHours()<19 && today.getHours()>13){
+    if (today.getHours()<=19 && today.getHours()>=15){
         checkIftarTime();
     }
     else if (today.getHours()<=4 && today.getHours()>=0) {
