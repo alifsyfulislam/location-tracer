@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 250px;
+    width: 300px;
+}
+
+.ad_size{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: orangered;
+}
+
+.namaz_box{
+    height: 250px;
+    width: 100px;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#fajr,#johur,#asar,#magrib,#esha{
+    height: 38px;
+    width: 88px;
+    border: 1px solid white;
+    background-color: orangered;
+    position: absolute;
+    left: 5px;
+    text-align: center;
+    font-family: Georgia;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#fajr{
+    top: 5px;
+}
+
+#johur{
+    top: 55px;
+}
+
+#asar{
+    top: 105px;
+}
+
+#magrib{
+    top: 155px;
+}
+
+#esha{
+    top: 205px;
+}
+
+.description_box{
+    height: 240px;
+    width: 190px;
+    font-family: Georgia;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: orange;
+    position: absolute;
+    top: 5px;
+    left: 105px;
+    text-align: center;
+}
+
+.title{
+    position: absolute;
+    top: 10px;
+    height: 40px;
+    width: 100%;
+    font-size: 22px;
+}
+
+.paragraph{
+    position: absolute;
+    top: 75px;
+    height: 100px;
+    width: 100%;
+}
+
+.timer{
+    position: absolute;
+    top: 190px;
+    height: 50px;
+    width: 100%;
+    padding-top: 7px;
+    color: orangered;
+}
+
+
+
+#audioFile{
+    z-index: 999;
+    display: none;
+}
+
+
+#audioFile2{
+    z-index: 999;
+    display: none;
+}
+
+
+#hadis{
+    font-size: 14px;
+    padding: 2%;
+}
+
+
+#division{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+
+#sub{
+    z-index: 999999999;
+}
+#sub2{
+    z-index: 9999999999999999;
+}
+#counter{
+    color: white !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+#subtitle{
+    letter-spacing: 3px;
+    animation:shields linear infinite 10s;
+}
+
+@keyframes shields {
+    0%,100%{
+        letter-spacing: 1px;
+        transform: scaleX(0.8);
+    }
+    50%{
+        letter-spacing: 3px;
+        transform: scaleX(1);
+    }
+}
+

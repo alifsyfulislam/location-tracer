@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="ad.size" content="width=300,height=250">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ramadan Karim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ad_size">
+        <span id="division"></span>
+        <div class="namaz_box">
+            <div id="fajr">ফজর</div>
+            <div id="johur">জহুর</div>
+            <div id="asar">আসর</div>
+            <div id="magrib">মাগরিব</div>
+            <div id="esha">এশা</div>
+        </div>
+        <div class="description_box">
+            <small id="sub"></small>
+            <small id="sub2"></small>
+            <audio controls id="audioFile">
+                <source src="audio/Madina-Adzan-Fajr.mp3" type="audio/mp3">
+            </audio>
+
+            <audio controls id="audioFile2">
+                <source src="audio/azan5-Rest.mp3" type="audio/mp3">
+            </audio>
+            <div class="title">
+                <h3 id="dateReminder">রামাদান মুবারক</h3>
+            </div>
+            <div class="paragraph">
+                <p id="hadis"></p>
+            </div>
+
+            <div class="timer">
+                <h5 id="subtitle"></h5>
+                <p id="counter"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
