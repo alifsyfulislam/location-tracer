@@ -389,6 +389,7 @@ function divisionDifference(diff) {
     if (divisionStatus == "dhk"){
         document.getElementById('sub').innerHTML = "ঢাকা বিভাগ";
         console.log(time);
+        console.log(divisionStatus);
         return time;
     }
 
